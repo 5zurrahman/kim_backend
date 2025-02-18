@@ -1,0 +1,7 @@
+flask
+flask-cors
+pyttsx3
+torch
+transformers
+numpy
+pandas
