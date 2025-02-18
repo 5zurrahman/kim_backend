@@ -7,7 +7,8 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app)
+# Allow all origins, methods, and headers
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Load model from Hugging Face
 model_name = "Lonewolf12/Kim_backend"
